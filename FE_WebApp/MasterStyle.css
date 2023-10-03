@@ -1,0 +1,386 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial;
+}
+/*********************************************************/
+/***********************TOP-MENU**************************/
+/*********************************************************/
+
+.Top-Menu {
+    background-color: #4b4b4b;
+    display:block;
+    height: 60px;
+    width: 100%;
+}
+
+.Top-Menu {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+header {
+    float: left;
+    width: 20%;
+    object-fit: scale-down;
+}
+
+#header1 img {
+    width: 180px;
+    height: 47px;
+    margin: 5px 0px 8px 150px;
+}
+
+nav {
+    float: left;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav li {
+        float: left;
+        margin-right: 10px;
+        margin-top: -16px;
+    }
+
+        nav li a {
+            display: inline-block;
+            text-decoration: none;
+            font-family: Arial;
+            font-size: 105%;
+            color: #dbdfe6;
+            padding: 20px 13px;
+        }
+
+            nav li a:hover,
+            nav li a:active {
+                background-color: #595b5f;
+                color: white;
+            }
+
+#header2 {
+    font-size: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#icon {
+    color: white;
+    padding: 0 10px 0 0;
+}
+
+section img {
+    height: 500px;
+    width: 100%;
+}
+
+/*********************************************************/
+/*************************GRID****************************/
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+    .col:first-child {
+        margin-left: 0;
+    }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+    width: 100%;
+}
+
+.span_2_of_3 {
+    width: 66.1%;
+}
+
+.span_1_of_3 {
+    width: 32.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 {
+        width: 100%;
+    }
+}
+
+
+/*********************************************************/
+/*********************MAIN-CONTENT************************/
+/*********************************************************/
+
+.Main {
+    background-color:ghostwhite;
+    display:block;
+    height: 100%;
+}
+
+aside {
+    width: 10%;
+    float: left;
+    object-fit: scale-down;
+}
+
+article {
+    width: 80%;
+    float: left;
+}
+
+.picture img {
+    margin-top: 50px;
+    width: 100%;
+}
+
+/****************************HOME*************************/
+
+.home {
+    width: 100%;
+    max-height: 400px;
+}
+
+.news, products, promotions, services {
+    padding: 20px;
+}
+
+#prod-Categogy {
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+}
+
+#prod-table {
+    background-color: white;
+    border-spacing: 10px;
+    width: 100%;
+}
+
+#prod-td {
+    width: 25%;
+    border: 1px solid #b2bec3;
+    border-radius: 8px;
+    margin: auto;
+    font-weight:200;
+    padding:50px;
+}
+
+#prod-label {
+    float: right;
+    position: relative;
+    bottom: 5px;
+    padding: 5px;
+    max-height: 40px;
+    max-width: 120px;
+}
+
+#prod-img {
+    max-height: 250px;
+    max-width: 400px;
+    border: none;
+}
+
+#prod-name {
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+}
+
+#newPrice {
+    font-family: 'Times New Roman';
+    font-size: medium;
+    text-align: left;
+    color: cornflowerblue;
+    display: inline;
+}
+
+#oldPrice {
+    font-family: Arial;
+    font-size: small;
+    color: lightgray;
+    display: inline;
+    text-decoration: line-through;
+}
+
+#discount {
+    font-family: Arial;
+    font-size: small;
+    color: lightgray;
+    display: inline;
+}
+
+.viewAll {
+    padding:10px 25px;
+    border: 2px solid dodgerblue;
+    width: 230px;
+    height: 20px;
+    color: dodgerblue;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.viewAll a{   
+    font-family: Arial;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-align:center;
+}
+
+    .viewAll a:hover,
+    .viewAll a:active{
+        color:white;
+        background-color:dodgerblue;
+    }
+
+#newsRegister {
+    background-color: whitesmoke;
+    border: 5px solid whitesmoke;
+    display:block;
+    width:124%;
+    margin-left: -150px;
+    padding: 50px 0px;
+    font-family:Arial;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+#email {
+    padding: 10px;
+    width: 500px;
+    border-radius: 25px;
+    border: 1px solid white;
+    border-style:none;
+}
+
+#dangky {
+    padding: 10px;
+    width: 100px;
+    border-radius: 25px;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    color: white;
+    margin-left: -50px;
+}
+
+    #dangky:hover,
+    #dangky:active {
+        background-color: deepskyblue;
+        border: 1px solid deepskyblue;
+    }
+
+#call img{
+    width:55px;
+    height:55px;
+    opacity:0.8;
+}
+#call img{
+    position:fixed;
+    right:25px;
+    bottom:125px;
+}
+
+/*********************************************************/
+/************************FOOTER***************************/
+/*********************************************************/
+
+footer {
+    background-color: black;
+    padding: 50px 10%;
+    max-height: auto;
+    width: 100%;
+    display: inline-table;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+    footer h1 {
+        font-size: 15px;        
+        color: #d2d2d7;
+        font-weight:300;
+        text-align:left;
+    }
+
+    footer p {
+        
+        font-weight: 300;
+        font-family: Arial;
+        font-size: 15px;
+        color: #d2d2d7;
+        line-height: 1.6;
+    }
+
+    footer ul {
+        list-style: none;       
+    }
+
+    footer li a {
+        text-decoration: none;
+        color: #86868b;
+        font-size: 13px;
+        line-height: 28px;
+    }
+
+    footer li a:hover,
+    footer li a:active{
+        text-decoration:underline;
+    }
+
+    footer h2 {
+        color: #515154;
+        font-size:13px;
+        line-height:0.7;
+        font-family:Arial;
+        font-weight:100;
+    }
+
+.bct img{
+        width:139px;
+        padding-top:25px;
+        float:left;
+}
+
+.logo img{
+    width: 180px;
+    height:47px;
+}
+
+
+
+
+
